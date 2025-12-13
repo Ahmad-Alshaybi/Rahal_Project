@@ -344,6 +344,85 @@ Comments Section
 Footer
 =======================================================
 -->
+<section>
+<footer class="article-footer">
+    <!-- Repeating Pattern Strip -->
+    <div class="footer-top-pattern"></div>
+    
+    <!-- Main Footer Content Container -->
+    <div class="footer-content">
+        
+        <!-- Rahal Information Section -->
+        <div class="footer-section">
+            <div class="footer-brand">
+                <!-- Logo -->
+                <a href="index.php"><img loading="lazy" decoding="async" src="./assets/images/logo/first-logo.png" alt="RahalLogo" class="footer-logo"></a>
+            </div>
+            <!-- Rahal Description -->
+            <p class="footer-description">
+                منصة رحال - دليلك الشامل لاكتشاف كنوز المملكة العربية السعودية. 
+                نقدم لك تجربة سياحية استثنائية تجمع بين الأصالة والحداثة.
+            </p>
+            <!-- Social Media Links -->
+            <div class="footer-social">
+                <a href="#" class="social-link" title="تويتر">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link" title="انستغرام">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" title="فيسبوك">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" title="يوتيوب">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Quick Links Navigation Section -->
+        <div class="footer-section">
+            <h3>روابط سريعة</h3>
+            <ul class="footer-links">
+                <li><a href="index.php">الرئيسية</a></li>
+                <li><a href="./assets/php/attractions_list.php">معالم المملكة</a></li>
+                <li><a href="./index.php#map-section">الخريطة التفاعلية</a></li>
+                <li><a href="./assets/html/Qibla.html">القبلة ومواعيد الصلاة</a></li>
+                <li><a href="index.php#cities-section">أبرز المدن</a></li>
+            </ul>
+        </div>
+        
+        <!-- Attractions Categories Section -->
+        <div class="footer-section">
+            <h3>المعالم</h3>
+            <ul class="footer-links">
+                <li><a href="./assets/php/attractions_list.php?category=تراثية">معالم تراثية</a></li>
+                <li><a href="./assets/php/attractions_list.php?category=دينية">معالم دينية</a></li>
+                <li><a href="./assets/php/attractions_list.php?category=طبيعية">معالم طبيعية</a></li>
+                <li><a href="./assets/php/attractions_list.php?category=ثقافية">معالم ثقافية</a></li>
+                <li><a href="./assets/php/attractions_list.php?category=ترفيهية">معالم ترفيهية</a></li>
+            </ul>
+        </div>
+        
+        <!-- Contact Information Section -->
+        <div class="footer-section">
+            <h3>اتصل بنا</h3>
+            <div class="footer-contact">
+                <p><i class="fas fa-envelope"></i> info@rahal.com</p>
+                <p><i class="fas fa-phone"></i>  6789 345 12 966+</p>
+                <p><i class="fas fa-map-marker-alt"></i> المملكة العربية السعودية</p>
+                <p><i class="fas fa-clock"></i> ٢٤/٧ دعم على مدار الساعة</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Copyright Section -->
+    <div class="footer-bottom">
+        <p>© 2025 رحال. جميع الحقوق محفوظة. | صمم بـ ❤️ لحب المملكة</p>
+    </div>
+</footer>
+</section>
+
 
 <!--
 =======================================================
