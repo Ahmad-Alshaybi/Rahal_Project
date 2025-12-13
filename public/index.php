@@ -28,11 +28,51 @@ $cities_data = [
     'الدمام' => ['region' => 4, 'city' => 'الدمام'] // الشرقية (region 4)
 ];
 ?>
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahal</title> <!-- Page Title -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"><!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css"> <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/article.css"> <!-- Article CSS -->
+  <link rel="icon" href="./assets/images/Favicon/favicon-32x32.png" type="image/x-icon" /> <!-- Favicon -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> <!-- Swiper CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome CSS -->
+</head>
+
+<body>
   <!--
 =======================================================
 Nav bar
 =======================================================
 -->
+<section dir="ltr">
+    <div class="navbar" id="navbar">
+        <!-- Search bar -->
+        <form method="GET" action="assets/php/search_results.php" class="search-form">
+            <input dir="rtl"class="search-bar" type="text" name="query" placeholder="ابحث عن معلم سياحي...">
+        </form>
+
+        <!-- Navigation links and logo -->
+        <div class="navbar-right-group">
+            <!-- Navigation links -->
+            <ul class="nav-links" dir="rtl">
+                <li><a href="index.php">الرئيسية</a></li>
+                <li><a href="./assets/php/attractions_list.php">معالم المملكة</a></li>
+                <li><a href="./assets/html/Qibla.html">القبلة ومواعيد الصلاة</a></li>
+                <li><a href="index.php#map-section">الخريطة</a></li>
+                <li><a href="./assets/php/add_attraction.php" style="background:#be9d6a;color:white;padding:8px 14px;border-radius:8px;"> إضافة معلم</a></li>
+            </ul>
+            <!--Logo-->
+            <a href="index.php"><img loading="lazy" decoding="async" src="./assets/images/logo/first-logo.png" alt="RahalLogo" id="logo"></a>
+        </div>
+    </div>
+</section>
 
 
   <!--
@@ -40,6 +80,11 @@ Nav bar
 Background Video
 =======================================================
 -->
+<section class="video-section">
+    <video autoplay loop muted playsinline preload="metadata" loading="lazy">
+      <source src="./assets/images/Video/intro-background.mp4" type="video/mp4">
+    </video>
+</section>
 
 
   <!--
@@ -47,6 +92,10 @@ Background Video
 Name and Slogan
 =======================================================
 -->
+  <section>
+    <div class="overlay-text" id="name"></div>
+    <div class="slogan" id="slogan"></div>
+  </section>
 
 
 <!--
