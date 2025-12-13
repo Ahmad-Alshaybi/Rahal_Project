@@ -149,6 +149,58 @@ Interactive Map Section
 Comments Section
 =======================================================
 -->
+<section class="comments-section" dir="rtl">
+    <div class="container">
+        <!-- Section Title -->
+        <h3 class="section-title">آراء زوارنا</h3>
+        
+        <!-- Comments Carousel Container -->
+        <div class="comments-carousel-container">
+            <div class="comments-carousel" id="commentsCarousel">
+                <!-- Comments will be loaded here by JavaScript -->
+            </div>
+            
+            <!-- Carousel Navigation Buttons -->
+            <button class="carousel-btn prev-btn" id="prevComment">❮</button>
+            <button class="carousel-btn next-btn" id="nextComment">❯</button>
+        </div>
+        
+        <!-- Add Comment Form Section -->
+        <div class="add-comment-form">
+            <!-- Form Title -->
+            <h3 style="text-align: center; margin-bottom: 30px; font-family: 'Tajawal', sans-serif; color: #142836;">
+                أضف تعليقك
+            </h3>
+            
+            <!-- Comment Submission Form -->
+            <form id="commentForm" method="POST">
+                <!-- Name Input Field -->
+                <div class="form-group">
+                    <input type="text" id="commentName" name="name" 
+                          placeholder="اسمك" required 
+                          style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-family: 'Tajawal', sans-serif; font-size: 16px; margin-bottom: 15px;">
+                </div>
+                
+                <!-- Comment Text Input Field -->
+                <div class="form-group">
+                    <textarea id="commentText" name="text" 
+                              placeholder="تعليقك..." required 
+                              rows="4"
+                              style="width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-family: 'Tajawal', sans-serif; font-size: 16px; margin-bottom: 15px; resize: vertical;"></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="custom-btn" 
+                        style="display: block; margin: 0 auto; padding: 12px 40px;">
+                    إرسال التعليق
+                </button>
+                
+                <!-- Message Display Area for Form Status -->
+                <div id="commentMessage" style="text-align: center; margin-top: 15px; font-family: 'Tajawal', sans-serif;"></div>
+            </form>
+        </div>
+    </div>
+</section>
 
 <!--
 =======================================================
