@@ -103,6 +103,61 @@ Name and Slogan
 Important Cities Carousel
 =======================================================
 -->
+<section dir="ltr" id="cities-section" style="padding: 50px 0;">
+  <div class="header first-header">
+    <h3>أبرز المدن</h3> <!-- Section Title -->
+  </div>
+
+  <!-- Swiper Carousel -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=1&city=<?= urlencode('الطائف') ?>">
+          <img loading="lazy" decoding="async" src="./assets/images/Photos/Al-Taif.png" alt="الطائف">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=3&city=<?= urlencode('العلا') ?>">
+          <img loading="lazy" decoding="async" src="./assets/images/Photos/Al-ula.png" alt="العلا">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=3&city=<?= urlencode('المدينة المنورة') ?>">
+          <img loading="lazy" decoding="async"  src="./assets/images/Photos/El-Maddena.png" alt="المدينة المنورة">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=13&city=<?= urlencode('أبها') ?>">
+          <img  loading="lazy" decoding="async" src="./assets/images/Photos/Asser.png" alt="عسير">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=1&city=<?= urlencode('مكة المكرمة') ?>">
+          <img  loading="lazy" decoding="async" src="./assets/images/Photos/Makkah.png" alt="مكة المكرمة">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=1&city=<?= urlencode('جدة') ?>">
+          <img loading="lazy" decoding="async"  src="./assets/images/Photos/Jeddah.png" alt="جدة">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=2&city=<?= urlencode('الرياض') ?>">
+          <img loading="lazy" decoding="async"  src="./assets/images/Photos/Riyad.png" alt="الرياض">
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="./assets/php/attractions_list.php?region=4&city=<?= urlencode('الدمام') ?>">
+          <img loading="lazy" decoding="async"  src="./assets/images/Photos/Al-Dammam.png" alt="الدمام">
+        </a>
+      </div>
+    </div>
+    <!-- Swiper buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
 <!--
 =======================================================
