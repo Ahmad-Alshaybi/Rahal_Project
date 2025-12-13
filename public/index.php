@@ -28,7 +28,7 @@ $cities_data = [
     'الدمام' => ['region' => 4, 'city' => 'الدمام'] // الشرقية (region 4)
 ];
 ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 
 <head>
@@ -246,7 +246,6 @@ Saudi Landmarks
 </section>
 
 
-
 <!--
 =======================================================
 Interactive Map Section
@@ -345,6 +344,7 @@ Footer
 =======================================================
 -->
 <section>
+<!-- Footer Section -->
 <footer class="article-footer">
     <!-- Repeating Pattern Strip -->
     <div class="footer-top-pattern"></div>
@@ -423,7 +423,6 @@ Footer
 </footer>
 </section>
 
-
 <!--
 =======================================================
 Chatbot Widget
@@ -464,3 +463,72 @@ Chatbot Widget
     }
   })();
 </script>
+
+<!-- JS linking -->
+<script src="./assets/js/script.js"></script>
+<script src="./assets/js/map-interaction.js"></script>
+<script src="./assets/js/search.js"></script>
+<script src="./assets/js/location.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  // Initialize Swiper carousel with custom configuration
+  var swiper = new Swiper(".mySwiper", {
+    // Number of slides visible at once (1.5 shows part of adjacent slide)
+    slidesPerView: 1.5,
+    
+    // Space between slides in pixels
+    spaceBetween: 30,
+    
+    // Enable infinite loop
+    loop: true,
+    
+    // Center the active slide
+    centeredSlides: true,
+    
+    // Auto-play configuration
+    autoplay: {
+      delay: 3000, // 3 seconds between slides
+      disableOnInteraction: false // Continue autoplay after user interaction
+    },
+    
+    // Pagination dots configuration
+    pagination: {
+      el: ".swiper-pagination", // Pagination container element
+      clickable: true, // Allow clicking on dots to navigate
+    },
+    
+    // Navigation arrows configuration
+    navigation: {
+      nextEl: ".swiper-button-next", // Next button element
+      prevEl: ".swiper-button-prev", // Previous button element
+    },
+    
+    // Responsive breakpoints for different screen sizes
+    breakpoints: {
+      // Small screens (mobile)
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // Medium screens (tablets)
+      768: {
+        slidesPerView: 1.3,
+        spaceBetween: 25,
+      },
+      // Large screens (desktops)
+      1024: {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+      },
+      // Extra large screens
+      1400: {
+        slidesPerView: 1.7,
+        spaceBetween: 40,
+      }
+    }
+  });
+</script>
+</body>
+</html>
