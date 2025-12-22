@@ -318,6 +318,8 @@ $conn->close();
                     <li><a href="./attractions_list.php">معالم المملكة</a></li>
                     <li><a href="../html/Qibla.html">القبلة ومواعيد الصلاة</a></li>
                     <li><a href="../../index.php#map-section">الخريطة</a></li>
+                    <li><a href="../html/team.html">فريق العمل</a></li>
+                    <li><a href="add_attraction.php"> إضافة معلم</a></li>
                 </ul>
                 
                 <!-- Logo -->
