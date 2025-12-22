@@ -1,0 +1,228 @@
+/* Team page styles - uses existing Rahal design tokens */
+
+:root {
+    --team-primary: #142836;
+    --team-accent: #be9d6a;
+    --team-muted: #5f6b76;
+    --team-surface: #ffffff;
+    --team-background: #f8f9fa;
+}
+
+body.team-body {
+    background-color: var(--team-background);
+    color: var(--team-primary);
+    font-family: 'Tajawal', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form {
+    margin-right: auto;
+}
+
+.navbar-right-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.team-page {
+    /* content starts just below fixed navbar */
+    padding-top: 80px;
+}
+
+.team-hero {
+    padding: 60px 20px 100px;
+    background: linear-gradient(135deg, rgba(20, 40, 54, 0.96), rgba(20, 40, 54, 0.88));
+    color: #f2f2f2;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.12);
+}
+
+.team-hero span.eyebrow {
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 999px;
+    background: rgba(190, 157, 106, 0.18);
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.team-hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.team-hero p {
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #e4e7ea;
+    font-size: 17px;
+}
+
+.team-grid-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 20px 72px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.team-card {
+    background: var(--team-surface);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 6px 24px rgba(20, 40, 54, 0.07);
+    border: 1px solid rgba(20, 40, 54, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(190, 157, 106, 0.7);
+    box-shadow: 0 10px 30px rgba(190, 157, 106, 0.3);
+}
+
+.team-card .profile-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+
+.team-card .avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba(190, 157, 106, 0.45);
+    background: #f5f3ef;
+    flex-shrink: 0;
+}
+
+.team-card .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.team-card .name {
+    font-size: 19px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--team-primary);
+}
+
+#supervisor-card {
+    margin-right: 40px;
+}
+
+.team-card .role {
+    margin: 4px 0 0;
+    color: var(--team-muted);
+    font-size: 14px;
+}
+
+.team-card .bio {
+    margin: 0;
+    color: #4f5a64;
+    line-height: 1.7;
+    font-size: 14px;
+    text-align: center;
+}
+
+.team-card .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.team-card .social-links a {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(190, 157, 106, 0.12);
+    color: var(--team-primary);
+    transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.team-card .social-links a:hover {
+    background: #be9d6a;
+    color: #f2f2f2;
+    box-shadow: 0 6px 20px rgba(190, 157, 106, 0.4);
+}
+
+/* Supervisor card - premium highlight */
+.team-card.supervisor-card {
+    border: 1.5px solid rgba(190, 157, 106, 0.9);
+    background: linear-gradient(135deg, rgba(190, 157, 106, 0.15), #ffffff);
+    position: relative;
+    overflow: hidden;
+    grid-column: span 2;
+}
+
+.team-card.supervisor-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 0%, rgba(190, 157, 106, 0.2), transparent 55%);
+    pointer-events: none;
+}
+
+.team-card.supervisor-card .badge {
+    align-self: flex-start;
+    background: #be9d6a;
+    color: #f2f2f2;
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 8px 22px rgba(190, 157, 106, 0.4);
+}
+
+.team-card.supervisor-card .avatar {
+    width: 170px;
+    height: 170px;
+    border-width: 5px;
+}
+
+.team-card.supervisor-card .name {
+    font-size: 21px;
+}
+
+.team-card.supervisor-card .role {
+    color: #4b5561;
+}
+
+.team-card.supervisor-card .bio {
+    font-size: 15px;
+}
+
+.team-card .tagline {
+    color: var(--team-muted);
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+#anas {margin-right: 50px;}
+#rayan, #khaled {margin-right: 30px;}
