@@ -90,6 +90,7 @@ $content = preg_replace('/<link[^>]*rel=["\']stylesheet["\'][^>]*>/i', '', $cont
                     <li><a href="./attractions_list.php">معالم المملكة</a></li>
                     <li><a href="../html/Qibla.html">القبلة ومواعيد الصلاة</a></li>
                     <li><a href="../../index.php#map-section">الخريطة</a></li>
+                    <li><a href="../html/team.html">فريق العمل</a></li>
                 </ul>
                 
                 <a href="../../index.php"><img loading="lazy" decoding="async" src="../images/logo/second-logo.png" alt="RahalLogo" id="logo"></a>
