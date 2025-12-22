@@ -66,7 +66,6 @@ Nav bar
                 <li><a href="./assets/php/attractions_list.php">معالم المملكة</a></li>
                 <li><a href="./assets/html/Qibla.html">القبلة ومواعيد الصلاة</a></li>
                 <li><a href="index.php#map-section">الخريطة</a></li>
-                <li><a href="./assets/php/add_attraction.php" style="background:#be9d6a;color:white;padding:8px 14px;border-radius:8px;"> إضافة معلم</a></li>
                 <li><a href="./assets/html/team.html">فريق العمل</a></li>
             </ul>
             <!--Logo-->
